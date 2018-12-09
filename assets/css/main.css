@@ -1,0 +1,792 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body, html {
+    background: black;
+	font-family: 'Raleway', Avenir, sans-serif;
+    overflow-x: hidden;
+	width: 100%;
+}
+
+.container, .container-fluid {
+    background: #f2f2f2;
+    padding: 5px 0;
+}
+
+.body-wrap {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+/*links */
+
+a {
+    color: inherit;
+	text-decoration: none;
+    text-shadow: none;
+	transition: all .3s ease;
+}
+
+a:hover {
+    color: hotpink;
+	text-decoration: none;
+}
+a > .headline:hover, a > span:hover {
+	color: hotpink;
+	text-decoration: none;
+}
+
+/*buttons */
+
+.btn,
+.btn-lg {
+    border-radius: 21px;
+}
+.radius-0 {
+    border-radius: 0;
+}
+
+/* height + width utils */
+
+.min-50 {
+	min-height: 50vh;
+}
+.min-70 {
+	min-height: 70vh;
+}
+.min-100 {
+	min-height: 100vh;
+}
+.fs {
+    height: 100vh;
+    }
+
+/* display */
+
+.table {
+	display: table;
+}
+
+/* position */
+
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.right-0 {
+    right: 0;
+}
+.left-0 {
+    left: 0;
+}
+.top-0 {
+    top: 0;
+}
+.bottom-0 {
+    bottom: 0;
+}
+.z--1 {
+    z-index: -1;
+}
+.z-0 {
+    z-index: 0;
+}
+.z-1 {
+    z-index: 1;
+}
+.z-2 {
+    z-index: 2;
+}
+
+/* text */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, button, .btn {
+    font-family: 'Raleway', Avenir, sans-serif;
+    text-shadow: none;
+}
+
+.site-title {
+	color: white;
+	font-size: 6vmin;
+	font-weight: 200;
+    letter-spacing: 7px;
+}
+.headline {
+	color: white;
+	font-size: 10vmin;
+	font-size: 12vmin;
+	font-weight: 200;
+    transition: all .3s ease;
+}
+.section-title {
+    font-size: 6vmin;
+	font-weight: 300;
+}
+
+.big {
+    font-size: 12vw;
+}
+
+.l-h {
+	line-height: 70%;
+}
+
+/*text effects*/
+
+.skew {
+    -webkit-transform: skew(0, -4.7deg);
+	transform: skew(0, -4.7deg);
+}
+.rotate {
+    transform: rotate(-90deg);
+}
+.x-bold {
+    font-weight: 900;
+}
+.word-break {
+    word-break: break-all;
+}
+.op-1 {
+    opacity: 0.1;
+}
+.op-3 {
+    opacity: 0.3;
+}
+.op-5 {
+    opacity: 0.5;
+}
+
+/* icons */
+
+.fa-stroke {
+    color: transparent;
+    -webkit-text-stroke: 2px #6c757d;
+}
+
+/* colors */
+
+.pink {
+	color: hotpink;
+}
+
+/* bg colors */
+
+.bg-black {
+	background: black;
+}
+.bg-pink {
+	background: hotpink;
+}
+.bg-caption {
+	background: black;
+	background: rgba(0,0,0,0.3);
+}
+.bg-angle {
+  background: linear-gradient(70deg, grey 40%, transparent 40%);
+}
+.bg-white-op {
+    background: rgba(255,255,255,0.8);
+}
+.bg-light {
+    background: #f2f2f2!important;
+}
+
+/*animation*/
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeOut {
+	animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: .5rem;
+    }
+}
+
+/* home section slides */
+
+.banner-home {
+	background: linear-gradient(to top left, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/img/jms-home-banner.jpg) center;
+	background-size: cover;
+    background-attachment: fixed;
+}
+.bg-img-nfld {
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/assets/img/jms-the-drs-house-1.jpg) center;
+	background-size: cover;
+    background-attachment: fixed;
+}
+.bg-img-scotland {
+    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)), url(/assets/img/jms-dunskey-aerial-min.jpg) 80% center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(160%);
+}
+.bg-img-bc {
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/assets/img/jms-tofino-aerial.jpg) 20% center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-img-ns {
+	background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)), url(/assets/img/jms-trout-point-1-min.jpg) center;
+	background-size: cover;
+    background-attachment: fixed;
+}
+.bg-img-mongolia {
+    background: url(/assets/img/jms-mongolia-min.jpg) center;
+	background-size: cover;
+}
+.bg-img-chile {
+    background: url(/assets/img/jms-wiwp-chile-1.jpeg) center top;
+	background-size: cover;
+}
+.bg-img-ns {
+    background: url(/assets/img/jms-trout-point-1-min.jpg) center;
+	background-size: cover;
+}
+.bg-jms {
+	background: url(/assets/img/jms-artist-photo-yellow.jpg) center 40%;
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+/* bg textures */
+
+.bg-cubes {
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/* nav */
+
+.navbar {
+    background: rgba(0,0,0,0.4);
+    padding: 15px 15px;
+}
+
+.navbar-brand, 
+.nav-link {
+	color: white;
+	text-shadow: 1px 1px 2px #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+.nav-item {
+    padding-right: 15px;
+}
+
+
+/* home */
+
+
+/* mailchimp form styles*/
+ #mc_embed_signup input.email {border: 1px solid #ABB0B2; border-radius: 0; font-family: 'Raleway', Avenir, Helvetica, sans-serif; font-size: 18px; margin: 5px 0 0; padding: 20px;}
+ #mc_embed_signup .button {background-color: #91B4BA; border-radius: 0; font-family: 'Raleway', Avenir, Helvetica, sans-serif; font-size: 18px; margin: 5px 0 0; padding: 20px; line-height: 0; border: 1px solid #ABB0B2;}
+#mc_embed_signup form {text-align: left;}
+
+/* about page */
+
+.bg-img-about-banner {
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/assets/img/jms-about-banner-Ireland-min.jpg) center left;
+	background-size: cover;
+    filter: saturate(2);
+}
+.bg-img-long-beach-aerial {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/assets/img/jms-long-beach-lodge-aerial.jpg) center 20%;
+    background-size: cover;
+    filter: saturate(130%);
+}
+.bg-img-teaching {
+    background: url(/assets/img/jms-teaching-class.jpg) center;
+    background-size: cover;
+}
+
+/* nfld page */
+
+.bg-img-nfld-banner {
+	background: url(/assets/img/jms-the-drs-house-1.jpg) center;
+	background-size: cover;
+}
+.bg-img-nfld-2 {
+    background: url(/assets/img/jms-the-drs-house-3.jpg) center;
+	background-size: cover;
+}
+.bg-img-nfld-3 {
+    background: url(/assets/img/jms-the-drs-house-2-min.jpg) center;
+	background-size: cover;
+}
+.bg-img-nfld-4 {
+    background: url(/assets/img/jms-nfld-forest-path-min.jpg) center;
+	background-size: cover;
+}
+
+/* scotland page */
+
+.bg-img-scotland-banner {
+    background: url(/assets/img/jms-dunskey-aerial-min.jpg) 80% center;
+	background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(160%);
+}
+.bg-img-scotland-1 {
+    background: url(/assets/img/jms-dunskey-aerial-min.jpg) 80% center;
+	background-size: cover;
+    filter: contrast(160%);
+}
+.bg-img-scotland-2 {
+    background: url(/assets/img/jms-dunskey-castle-min.jpg) center;
+    background-size: cover;
+}
+.bg-img-scotland-3 {
+    background: url(/assets/img/jms-dunskey-interior-min.jpg) center;
+    background-size: cover;
+}
+.bg-img-scotland-4 {
+    background: url(/assets/img/jms-dunskey-room.jpg) center;
+    background-size: cover;
+}
+.bg-img-scotland-5 {
+    background: url(/assets/img/jms-dunskey-river-aerial-min.jpg) center;
+	background-size: cover;
+}
+
+/* bc page */
+
+.bg-bc-banner {
+	background: url(/assets/img/jms-tofino-aerial.jpg) 20% center;
+	background-size: cover;
+}
+.bg-img-tofino-1 {
+    background: url(/assets/img/jms-tofino-interior.jpg) center;
+	background-size: cover;
+}
+.bg-img-tofino-2 {
+    background: url(/assets/img/jms-tofino-forest-min.jpg) center;
+	background-size: cover;
+}
+.bg-img-tofino-3 {
+    background: url(/assets/img/jms-wiwp-bc-cottage.jpg) center;
+	background-size: cover;
+}
+.bg-img-tofino-4 {
+    background: url(/assets/img/jms-tofino-pano.jpg) center;
+	background-size: cover;
+}
+
+/* nova scotia */
+
+
+/* upcoming */
+
+.bg-img-upcoming-banner {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/img/jms-chile-horizon-2.jpg) center;
+	background-size: cover;
+}
+.bg-img-mongolia-horses {
+    background: url(/assets/img/jms-mongolia-horses-min.jpg) center;
+	background-size: cover;
+}
+.bg-img-chile-2 {
+    background: url(/assets/img/jms-wiwp-atacama-2.jpg) center;
+	background-size: cover;
+}
+
+/* footer */
+
+footer {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/assets/img/jms-footer-min.jpg) center bottom;
+    background-size: cover;
+} 
+.bg-img-contact {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/jms-home-banner.jpg) center;
+	background-size: cover;
+}
+
+footer .fa {
+    font-size: 12vmin;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+
+/* media queries -------------*/
+
+@media (max-width: 1200px) {
+    .nav-link {
+        border-top: 1px solid lightgrey;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    
+	.o--1 {
+		-webkit-box-ordinal-group: 0;
+		-ms-flex-order: -1;
+		order: -1;
+		-webkit-order: -1;
+	}
+	.o-0 {
+		-webkit-box-ordinal-group: 1;
+		-ms-flex-order: 0;
+		order: 0;
+	}
+	.o-1 {
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+		order: 1;
+	}
+    .o-12 {
+		-webkit-box-ordinal-group: 12;
+		-ms-flex-order: 12;
+		order: 12;
+	}
+}
+
+@media (max-width: 768px) {
+    
+    div[class*="bg-"],
+    .banner-home {
+        background-attachment: scroll;
+    }
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: 15vmin;
+    }
+    .site-title {
+        font-size: 12vmin;
+        text-align: left;
+    }
+    .section-title {
+        font-size: 7vmin;
+        font-weight: bold;
+    }
+    .bg-img-scotland {
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/img/jms-dunskey-aerial-min.jpg) 70% 70%;
+        background-size: cover;
+    }
+    .bg-img-bc {
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/img/jms-tofino-aerial.jpg) 20% center;
+        background-size: cover;
+    }
+    
+    .table-lg {
+		display: table;
+	}
+    .card-home {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* mailchimp form make 100% */
+    #mc_embed_signup input.email {width: 100%;}    
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
